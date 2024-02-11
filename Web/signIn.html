@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="Icon" href="images/Favicon.png" type="Icon/JPG">
+    <link rel="stylesheet" href="signIn.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet" title="Web Awesome"
+      href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    >
+  </head>
+  <body class="light">
+    <div id="NavBar" class="navbar">
+      <a href="index.html" class="Anchor">Home</a>
+      <a href="plan.html" class="Anchor">Select a Plan</a>
+      <!-- <a href="#" class="Anchor" id="cart-icon">Cart</a> -->
+      <a href="contact.html" class="Anchor expand">Contact us</a>
+      <a href="about.html" class="Anchor expand">About us</a>
+      <div class="cart">
+        <div class="cart-title">CART</div>
+        <div class="cart-content"></div>
+  
+        <div class="total">
+          <div class="total-title">TOTAL</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+        <button class="btn-buy" onclick="alt()">Place Order</button>
+        <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+    </div>
+    </div> 
+
+    <video autoplay muted loop>
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div id="form">
+      <h1 id="form-h"><pre>LOG IN</pre></h1>
+      <input type="email" id="email">
+      <label for="" id="mailbel">Email</label>
+      <i class="fa-solid fa-envelopes"></i>
+      <div class="container">
+      <div class="inputArea">
+      <input type="password" class="pass" id="YourPassword" required>
+      <label for="" id="passbel">Password</label>
+      <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-duotone fa-eye" id="eye"></i>
+    </div>
+      <div class="strengthMeter"></div>
+      </div>
+      <button id="logIn" onclick="hack()"><pre>Login In</pre></button>
+      <a href="#" class="forget"><pre>Forgot Password</pre></a>
+      <!-- <p><pre id="ptag">New To ShahDevs?</pre></p>
+      <a href="#" class="signUp"><pre> Sign Up</pre></a> -->
+    </div>
+
+    
+  <label class="hamburger">
+    <input type="checkbox" class="hb" onclick="toggleNav()">
+    <svg viewBox="0 0 32 32">
+      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+      <path class="line" d="M7 16 27 16"></path>
+    </svg>
+  </label>
+  
+  
+  <div id="NavBar2" class="navbar">
+    <!-- <i class="fa-duotone fa-xmark-large" id="eyecon" onclick=hidenav()></i> -->
+    </a>
+    <a href="index.html" class="Anchor Anchor2 ho" id="home">Home</a>
+    <a href="plan.html" class="Anchor Anchor2">Select a Plan</a>
+    <a href="contact.html" class="Anchor Anchor2 expand">Contact us</a>
+    <a href="about.html" class="Anchor Anchor2 expand">About us</a>
+  </div>
+  </div>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/mixogynistt" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+     <script src="signIn.js"></script>
+<!-- <script src="script.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </body>
+</html>

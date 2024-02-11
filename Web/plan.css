@@ -1,0 +1,232 @@
+.container{
+    padding: 20px 0px;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .parent{
+    margin-bottom: 100px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    perspective: 1000px;
+  }
+  
+  .card{
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    height: 480px;
+  }
+  
+  .card:hover{
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+  }
+  
+  .content-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.811);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+  }
+  
+  .card-title{
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  
+  .card-title:hover {
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .card-content{
+    padding-top: 15px;
+    font-size: 12px;
+    color: rgb(185, 185, 185);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  
+  .card-content:hover{
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .see-more{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 12px;
+    display: block;
+    font-weight: 900;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgb(0, 42, 255);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+    background-color: rgba(166, 166, 166, 0.774);
+  }
+  
+  .see-more:hover{
+    transform: translate3d(0px, 0px, 50px);
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .date-box{
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .date-box span{
+    display: block;
+    text-align: center;
+  }
+  
+  .date-box .month{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .date-box .date{
+    font-size: 19px;
+    font-weight: 900;
+    color: rgb(0, 136, 255);
+  }
+
+  .card2{
+    filter: hue-rotate(150deg);
+  }
+
+  .card3{
+    filter: hue-rotate(300deg);
+  }
+
+  #NavBar {
+    display: flex;
+    justify-content: end;
+  }
+
+  #glowing-btn {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 778px) and (max-width: 1127px) {
+
+.footer {
+  position: absolute;
+  top: 1090px;
+  z-index: -999;
+  right: 0%;
+  left: 0;
+}
+}
+
+@media screen and (min-width: 420px) and (max-width: 778px) {
+  
+  .footer {
+    position: absolute;
+    top: 1690px;
+    z-index: -999;
+    right: 0%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 778px) {
+  
+  .footer {
+    position: absolute;
+    top: 1690px;
+    z-index: -999;
+    right: 0%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 407px) and (max-width: 428px) {
+  
+  .footer {
+    position: absolute;
+    top: 1690px;
+    z-index: -999;
+    right: 0%;
+    left: 0;
+    padding-bottom: 200px;
+  }
+
+}
+
+
+@media screen and (min-width: 387px) and (max-width: 408px) {
+  
+  .footer {
+    position: absolute;
+    top: 1690px;
+    z-index: -999;
+    right: 0%;
+    left: 0;
+    padding-bottom: 200px;
+  }
+
+  .card {
+    height: 500px;
+  }
+
+}
+
+
+@media screen and (min-width: 50px) and (max-width: 387px) {
+  
+  .footer {
+    position: absolute;
+    top: 1790px;
+    z-index: -999;
+    right: 0%;
+    left: 0;
+    padding-bottom: 200px;
+  }
+
+  .card {
+    width: 230px;
+  }
+
+  .parent {
+      margin-bottom: 150px;
+  } 
+
+  .card {
+    height: 510px;
+  }
+
+}

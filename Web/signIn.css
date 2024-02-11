@@ -1,0 +1,343 @@
+* {
+    color: rgb(192, 192, 192); 
+      /* Hide the scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+  /* Optional: Add custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+&::-webkit-scrollbar {
+    display: none;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-100;
+    margin-top: 0px;
+}
+
+.hamburger {
+    position: absolute !important;
+    top: 10px !important;
+    right: 20px !important;    
+}
+
+.line {
+    stroke: white !important;
+}
+
+#NavBar {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.Anchor {
+    color: rgb(168, 168, 168) !important;
+}
+
+#form {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(5px);
+    width: 350px;
+    margin: 100px auto;
+    height: 450px;
+    z-index: 22;
+    border-radius: 40px;
+    border: 1.2px solid rgb(16, 16, 16);
+    box-shadow: 17px 17px 127px 33px rgba(57, 57, 57, 0.75);
+}
+
+#email {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(121, 121, 121);
+    position: relative;
+    left: 235px;
+    top: -100px;
+}
+
+#email:focus + #mailbel,
+#email:invalid + #mailbel {
+    top: -130px;
+    transition: 0.2s linear;
+}
+
+#mailbel {
+    position: relative;
+    left: 50px;
+    top: -100px;
+    transition: 0.2s linear; 
+    cursor: context-menu;
+}
+
+.fa-envelopes {
+    position: relative;
+    left: 170px;
+    top: -100px;
+}
+
+.pass {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(121, 121, 121);
+    position: relative;
+    left: -77px;
+}
+
+.pass:focus + #passbel,
+.pass:valid + #passbel {
+    top: 185px;
+    transition: 0.2s linear;
+}
+
+#passbel {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    transition: 0.2s linear;
+    cursor: context-menu;
+}
+
+.fa-duotone {
+    position: relative;
+    left: 90px;
+    top: -30px;
+}
+
+#logIn {
+    position: absolute;
+    top: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 220px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px;
+    color: rgb(33, 33, 33);
+    background-color: rgba(62, 62, 62, 0.728);
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+#logIn:hover {
+    background-color: rgb(62, 62, 62);
+}
+
+#form-h {
+    position: absolute;
+    top: 35px;
+}
+
+.forget {
+    position: relative;
+    top: 135px;
+    right: 290px;
+    font-size: small;
+    cursor: pointer;
+}
+
+#ptag {
+    font-size: 0.9em;
+    position: relative;
+    top: 160px;
+    right: 280px;
+    font-weight: bolder;
+    color: rgb(185, 185, 185);
+}
+
+.signUp {
+    position: relative;
+    top: 180px;
+    right: 375px;
+    font-size: smaller;
+    color: aliceblue;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.signUp:hover {
+    color: rgb(26, 26, 26);
+    transition: 0.3s ease;
+}
+
+/* strength checker */
+
+.container .strengthMeter {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 84%;
+    height: 3px;
+    background: #222;
+    border-radius: 20px;
+  }
+  
+  .container .strengthMeter::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    background: #f00;
+    border-radius: 20px;
+  }
+  
+  .container.weak .strengthMeter::before {
+    width: 10%;
+    background: #f00;
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00)
+      drop-shadow(0 0 20px #f00);
+      border-radius: 20px;
+  }
+  
+  .container.moderate .strengthMeter::before {
+    width: 70%;
+    background: #eedc3d;
+    filter: drop-shadow(0 0 5px #eedc3d) drop-shadow(0 0 10px #eedc3d)
+      drop-shadow(0 0 20px #eedc3d);
+      border-radius: 20px;
+  }
+  
+  .container.strong .strengthMeter::before {
+    width: 100%;
+    background: #18e605;
+    filter: drop-shadow(0 0 5px #18e605) drop-shadow(0 0 10px #18e605)
+      drop-shadow(0 0 20px #18e605);
+      border-radius: 20px;
+  }
+  
+  .container .strengthMeter::after {
+    position: absolute;
+    top: -45px;
+    left: 30px;
+    transition: 0.5s;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+  
+  .container.container.weak .strengthMeter::after {
+    content: "Weak Password";
+    color: #f00;
+    filter: drop-shadow(0 0 5px#f00);
+    border-radius: 20px;
+  }
+  
+  .container.container.container.moderate .strengthMeter::after {
+    content: "Moderate Password";
+    color: #eedc3d;
+    filter: drop-shadow(0 0 5px#eedc3d);
+    border-radius: 20px;
+  }
+  
+  .container.container.container.container.strong .strengthMeter::after {
+    content: "Strong Password";
+    color: #18e605;
+    filter: drop-shadow(0 0 5px#18e605);
+    border-radius: 20px;
+  }
+
+
+@media screen and  (min-width: 370px) and (max-width: 400px) {
+    #form {
+        margin-left: 6%;
+        transform: scale(0.90);
+    }
+}
+
+@media screen and  (min-width: 350px) and (max-width: 370px) {
+    #form {
+        margin-left: 3%;
+        transform: scale(0.90);
+    }
+}
+
+@media screen and  (min-width: 330px) and (max-width: 350px) {
+    #form {
+        margin-left: -1%;
+        transform: scale(0.80);
+    }
+}
+
+@media screen and  (min-width: 315px) and (max-width: 330px) {
+    #form {
+        margin-left: -1%;
+        transform: scale(0.70);
+    }
+}
+
+@media screen and  (min-width: 300px) and (max-width: 315px) {
+    #form {
+        margin-left: -5%;
+        transform: scale(0.70);
+    }
+}
+
+@media screen and  (min-width: 280px) and (max-width: 300px) {
+    #form {
+        margin-left: -8%;
+        margin-top: -1%;
+        transform: scale(0.60);
+    }
+}
+
+@media screen and  (min-width: 260px) and (max-width: 280px) {
+    #form {
+        margin-left: -13%;
+        margin-top: -1%;
+        transform: scale(0.60);
+    }
+}
+
+@media screen and  (min-width: 250px) and (max-width: 260px) {
+    #form {
+        margin-left: -17%;
+        margin-top: -3%;
+        transform: scale(0.50);
+    }
+}
+
+@media screen and  (min-width: 230px) and (max-width: 250px) {
+    #form {
+        margin-left: -20%;
+        margin-top: -5%;
+        transform: scale(0.45);
+    }
+}
+
+@media screen and  (min-width: 200px) and (max-width: 230px) {
+    #form {
+        margin-left: -25%;
+        margin-top: -5%;
+        transform: scale(0.45);
+    }
+}
+
+@media screen and  (min-width: 200px) and (max-width: 220px) {
+    #form {
+        margin-left: -30%;
+        margin-top: -8%;
+        transform: scale(0.40);
+    }
+}
+
+@media screen and  (min-width: 50px) and (max-width: 200px) {
+    #form {
+        margin-left: -35%;
+        margin-top: -8%;
+        transform: scale(0.40);
+    }
+}
